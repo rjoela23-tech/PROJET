@@ -1,11 +1,252 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Marcelo - Portfolio Ingénieur</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>bonjour</h1>
+
+<!-- ================= NAVIGATION ================= -->
+<nav class="side-nav">
+
+    <div class="nav-logo">
+        <div class="logo-circle"></div>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#home" class="active" aria-label="Accueil">
+             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+             viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+            <path d="M3 9l9-7 9 7"></path>
+            <path d="M9 22V12h6v10"></path>
+
+        </svg>
+            <span>Accueil</span></a></li>
+        <li><a href="#projects" aria-label="Projets">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 7a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v1H3V7z"></path>
+            <path d="M3 10h18v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-9z"></path>
+        </svg>
+            
+            <span>Projets</span></a></li>
+        <li><a href="#about" aria-label="À propos">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="4"></circle>
+            <path d="M20 21a8 8 0 0 0-16 0"></path>
+        </svg>
+            <span>À propos</span></a></li>
+        <li><a href="#contact" aria-label="Contact">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16v16H4z"></path>
+            <path d="M4 4l8 8 8-8"></path>
+        </svg>
+            <span class="cont">Contact</span></a></li>
+    </ul>
+
+    <div class="nav-bottom">
+
+        <!-- Theme toggle -->
+        <button class="icon-btn" id="themeToggle" aria-label="Mode sombre">
+            🌙
+        </button>
+
+        <!-- placeholder button -->
+        <button class="icon-btn" aria-label="Paramètres">
+            ⚙️
+        </button>
+
+    </div>
+
+</nav>
+
+<!-- ================= HAMBURGER ================= -->
+<button class="hamburger-menu" aria-label="Menu mobile">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+<!-- ================= MAIN ================= -->
+<main class="main-content">
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero-section">
+
+        <div class="gradient-mesh"></div>
+        <div class="grain-overlay"></div>
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <h1 class="kinetic-text">
+                    <span class="text-line">MARCELO</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Ingénieur en Électronique & Informatique
+                </p>
+
+                <p class="hero-description">
+                    Conception de systèmes électroniques et solutions informatiques innovantes
+                </p>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="glass-card main-card">
+
+                    <div class="card-3d">
+
+                        <div class="neon-border"></div>
+
+                        <div class="card-content">
+                            <img src="images/photo1.jpg" alt="Photo profil" class="image-style">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="info-card glass-card">
+
+                <h3>À PROPOS DE MOI</h3>
+
+                <p>
+                    Ingénieur passionné par l’électronique, les systèmes embarqués et le développement informatique.
+                </p>
+
+                <button class="cta-button">Découvrir</button>
+
+            </div>
+
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span></span>
+        </div>
+
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="projects-section">
+
+        <h2 class="section-title">Projets</h2>
+
+        <div class="bento-grid">
+
+            <div class="bento-item item-large glass-card" data-tilt>
+                <div class="project-image">
+                    <img src="images/project1.png" class="project-img" alt="Système embarqué">
+                </div>
+                <div class="project-info">
+                    <h3>Système embarqué</h3>
+                    <p>Conception électronique & microcontrôleur</p>
+                </div>
+            </div>
+
+            <div class="bento-item item-small glass-card" data-tilt>
+                <div class="project-image">
+        <img src="images/project1.png" class="project-img" alt="Système embarqué">
+                </div>
+                <div class="project-info">
+                    <h3>Application Web</h3>
+                    <p>Développement informatique</p>
+                </div>
+            </div>
+
+            <div class="bento-item item-medium glass-card" data-tilt>
+                <div class="project-image">
+                   <img src="images/project1.png" class="project-img" alt="Système embarqué">
+                </div>
+                <div class="project-info">
+                    <h3>Application Mobile</h3>
+                    <p>Interface & programmation</p>
+                </div>
+            </div>
+
+            <div class="bento-item item-small glass-card" data-tilt>
+                <div class="project-image">
+                  <img src="images/project1.png" class="project-img" alt="Système embarqué">
+                </div>
+                <div class="project-info">
+                    <h3>Robotique</h3>
+                    <p>Automatisation & électronique</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="about-section">
+
+        <div class="about-content">
+
+            <h2 class="section-title">À Propos</h2>
+
+            <div class="about-text glass-card">
+                <p>
+                    Ingénieur en électronique et informatique spécialisé dans les systèmes embarqués, le développement logiciel et les solutions technologiques innovantes.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="contact-section">
+
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-card glass-card">
+
+            <form class="contact-form">
+
+                <input type="text" placeholder="Nom" class="form-input" required>
+                <input type="email" placeholder="Email" class="form-input" required>
+                <textarea placeholder="Message" class="form-input" rows="5" required></textarea>
+
+                <button type="submit" class="submit-btn">
+                    Envoyer
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- ================= SCROLL TOP ================= -->
+<button class="scroll-top" aria-label="Retour en haut">
+    ↑
+</button>
+
+<script src="script.js"></script>
+
 </body>
 </html>
